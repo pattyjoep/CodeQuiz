@@ -13,35 +13,23 @@
             answer: "parentheses"
             },
 
-        // {
-        //     title:
-        //     choices:
-        //     answer:
-        //     },
+        {
+            title: "The block of code to be executed when an 'if' statement resolves to false is contained after ____?",
+            choices: ["while", "else", "over", "other"],
+            answer: "else"
+            },
         
-        // {
-        //     title:
-        //     choices:
-        //     answer:
-        //     },
+        {
+            title: "arrays in JavaScript can be used to store:",
+            choices: ["numbers & strings", "arrays", "booleans", "all of the above"],
+            answer: "all of the above"
+            },
 
-        // {
-        //     title:
-        //     choices:
-        //     answer:
-        //     },
-
-        // {
-        //     title:
-        //     choices:
-        //     answer:
-        //     },
-
-        // {
-        //     title:
-        //     choices:
-        //     answer:
-        //     },
+        {
+            title: "A variable which contains (or resolves to) a value of true/false are known as ____",
+            choices: ["strings", "objects", "booleans", "local storage"],
+            answer: "booleans"
+            },
 
     ];
   

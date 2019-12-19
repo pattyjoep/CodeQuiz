@@ -27,7 +27,7 @@
     function TimerCountdown() {
         var sec = 75;
         var timer = setInterval(function(){
-            document.querySelector('#timerSpan').textContent = ":" + sec;
+            document.querySelector('#timerSpan').textContent = "Time: " + sec;
             sec--;
             if (sec < 0) {
                 clearInterval(timer);

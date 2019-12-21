@@ -20,3 +20,8 @@
     display: none;
 }
 
+.questions-Container {
+    width: 345px;
+    text-align: left !important;
+}
+

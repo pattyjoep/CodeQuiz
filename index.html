@@ -18,7 +18,7 @@
     <header>
         <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand customHighscores" href="highscores.html">View Highscores</a>
-            <span id="timerSpan" class="navbar-brand mb-0 h1 customTimer">Timer</span>
+            <span id="timerSpan" class="navbar-brand mb-0 h1 customTimer"></span>
             </nav>
         </nav>
     </header>
@@ -35,10 +35,21 @@
             </div>
             <div id="QuestionsDiv" class="card text-center customCard QuestionsDivHide">
                 <div class="questions-body">
-                <p>Questions and Choices go here</p>
-                <p>Questions and Choices go here</p>
-                <p>Questions and Choices go here</p>
-                <a id="Submitbtn" class="btn btn-primary customBtn">Submit</a>
+                    <span id="QuestionsContainer" class="questions-Container">
+                            {{title}} 
+                            <br>
+                            <br>
+                            {{A}}
+                            <br>
+                            {{B}}
+                            <br>
+                            {{C}}
+                            <br>
+                            {{D}}
+                            </div>
+                    </span>
+                    <br>
+                    <a id="Submitbtn" class="btn btn-primary customBtn">Submit</a>
                 </div>
             </div>
         </div>
@@ -57,6 +68,11 @@
 
 <!--Custom JS-->
 <script src="javascript\code_quiz_scripts.js"></script>
+<script src="javascript\code_quiz_questions.js"></script>
 
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+
+<script>w3.displayObject("QuestionsContainer", questionOne);</script>
 
 </html>

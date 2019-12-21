@@ -15,12 +15,15 @@
 
         var QuestionsDiv = document.querySelector("#QuestionsDiv")
 
+        var QuestionsContainer = document.querySelector("#QuestionsContainer")
 
 
         StartCardDiv.setAttribute("class", "StartCardDivHide")
 
-        QuestionsDiv.setAttribute("class", "card text-center customCard QuestionsDivShow")
-    
+        QuestionsDiv.setAttribute("class", "card text-center customCard QuestionsDivShow questions-Container")
+        
+        QuestionsContainer.textContent = JSON.stringify(questions)
+
     }
 
     //Timer countdown

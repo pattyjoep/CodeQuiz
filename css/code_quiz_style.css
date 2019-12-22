@@ -9,6 +9,8 @@
         background-color: purple;
         color: white !important;
         border: none;
+        border-radius: 5px;
+        margin: 5px;
     }
 
 .QuestionsDivHide {

@@ -18,6 +18,7 @@
     Start.addEventListener("click", function(){
         StartQuiz()
         TimerCountdown()
+        TimeExipration()
     });
     
    
@@ -56,10 +57,10 @@
             newBtn.textContent = options[c]
         
             newBtn.addEventListener("click", function() {
-                alert("Test alert")
-            
-            
-            })
+                 alert("Test Alert")
+                
+                     
+            });
         }
             
     }   
@@ -74,6 +75,14 @@
             sec--;
             if (sec < 0) {
                 clearInterval(timer);
-            }
-        }, 1000);
+            } 
+        }, 1000)
+    }
+
+    function TimeExipration() {
+        setTimeout(function() {
+            
+                alert("Time's Up");
+                window.location.reload()
+        }, 77000)
     }

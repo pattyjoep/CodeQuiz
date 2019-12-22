@@ -56,7 +56,7 @@
             newBtn.textContent = options[c]
         
             newBtn.addEventListener("click", function() {
-                alert("jkndogksdgf")
+                alert("Test alert")
             
             
             })

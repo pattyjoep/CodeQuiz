@@ -54,12 +54,16 @@
           
 
             newBtn.textContent = options[c]
-
-            if (newBtn.value === "numbers"){
-                alert("Correct!")
-            }
-        }   
-    }
+        
+            newBtn.addEventListener("click", function() {
+                alert("jkndogksdgf")
+            
+            
+            })
+        }
+            
+    }   
+    
 
 
     //Timer countdown

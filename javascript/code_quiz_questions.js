@@ -25,6 +25,14 @@ var questions = [
     answer: "else"
     },
 
+    {
+    title : "What action needs to be taken to clear local storage items?", 
+    choices: ["refreshing the browser", "restarting computer", "local storage cannot be erased", "clearing cache",],
+    answer: "else"
+    },
+
+
+
 ];
 
 

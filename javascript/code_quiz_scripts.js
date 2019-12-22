@@ -39,37 +39,43 @@
 
     function ShowQuestion(i) {
         
-        QuestionsContainer.textContent = questions[i].title
-
-        var options = questions[i].choices
-
-        for (var c = 0; c < options.length; c++) {
-            var newBtn = document.createElement("button")
-            newBtn.setAttribute("class", "customBtn")
-            newBtn.setAttribute("value", options[c])
-
-            var Break = document.createElement("br")
-
-            QuestionsContainer.appendChild(newBtn)
-            QuestionsContainer.appendChild(Break)
-          
-
-            newBtn.textContent = options[c]
+        //for (i = 0; i < question.length; i++) {
         
-            newBtn.addEventListener("click", function(event) {
-                 //alert("Test Alert")
-                var selection = event.currentTarget.value
-                if(selection === "numbers") {
-                    alert("Correct!")
+            QuestionsContainer.textContent = questions[i].title
 
-                } else {
-                    alert("Wrong :(")
-                }
-                var TimeRemaining = sec
-                localStorage.setItem("Time Remaining: ", TimeRemaining)
-            });
-        }
+            var options = questions[i].choices
+
+            for (var c = 0; c < options.length; c++) {
+                var newBtn = document.createElement("button")
+                newBtn.setAttribute("class", "customBtn")
+                newBtn.setAttribute("value", options[c])
+
+                var Break = document.createElement("br")
+
+                QuestionsContainer.appendChild(newBtn)
+                QuestionsContainer.appendChild(Break)
             
+
+                newBtn.textContent = options[c]
+            
+                newBtn.addEventListener("click", function(event) {
+                    //alert("Test Alert")
+                    var selection = event.currentTarget.value
+                    if (selection === "numbers" || selection === "parentheses" || selection === "all of the above" || selection === "else" || selection === "clearing cache") {
+                        alert("Correct!")
+                        
+
+                    } else {
+                        alert("Wrong :(")
+                    }
+                    var Score = sec
+                    localStorage.setItem("Score: ", Score)
+                
+                });
+            
+            }
+        //}
+      
     }   
     
 
@@ -88,7 +94,6 @@
 
     function TimeExipration() {
         setTimeout(function() {
-            
                 alert("Time's Up");
                 window.location.reload()
         }, 77000)

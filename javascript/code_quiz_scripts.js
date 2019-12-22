@@ -56,10 +56,17 @@
 
             newBtn.textContent = options[c]
         
-            newBtn.addEventListener("click", function() {
-                 alert("Test Alert")
-                
-                     
+            newBtn.addEventListener("click", function(event) {
+                 //alert("Test Alert")
+                var selection = event.currentTarget.value
+                if(selection === "numbers") {
+                    alert("Correct!")
+
+                } else {
+                    alert("Wrong :(")
+                }
+                var TimeRemaining = sec
+                localStorage.setItem("Time Remaining: ", TimeRemaining)
             });
         }
             
@@ -86,3 +93,5 @@
                 window.location.reload()
         }, 77000)
     }
+
+    
